@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matrix", "WebApplication1\Matrix.csproj", "{A1FD4B15-7F71-414C-813E-0EE90536FAB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matrix.Tests", "WebApplication1.Tests\Matrix.Tests.csproj", "{E56F712C-B202-4EB0-BAFA-B6B1F7287AD7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1FD4B15-7F71-414C-813E-0EE90536FAB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1FD4B15-7F71-414C-813E-0EE90536FAB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1FD4B15-7F71-414C-813E-0EE90536FAB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1FD4B15-7F71-414C-813E-0EE90536FAB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E56F712C-B202-4EB0-BAFA-B6B1F7287AD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E56F712C-B202-4EB0-BAFA-B6B1F7287AD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E56F712C-B202-4EB0-BAFA-B6B1F7287AD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E56F712C-B202-4EB0-BAFA-B6B1F7287AD7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {231D902D-67DD-401C-978E-4D1E924AA510}
+	EndGlobalSection
+EndGlobal

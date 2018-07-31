@@ -1,0 +1,47 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@Scripts.Render("~/bundles/rotate_matrix")
+<div ng-cloak ng-controller="rotateController">
+
+    <div class="row">
+        <div class="col">
+            <label for="m_range">Количество строк</label>
+            <br />
+            <input type="range" class="custom-range" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" min="0" max="50" step="1" ng-model="m_range" id="m_range">
+            <br />
+            <label for="n_range">Количество колонок</label>
+            <br />
+            <input type="range" class="custom-range" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" min="0" max="50" step="1" ng-model="n_range" id="n_range">
+            <br />
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-outline-success btn-block" ng-click="generateRandomMatrix()">Сгенерировать рандомную матрицу</button>
+            <button type="button" class="btn btn-outline-info btn-block" ng-click="rotate(matrix)">Повернуть матрицу на 90 градусов</button>
+            <button type="button" class="btn btn-outline-secondary btn-block" ng-disabled="!matrix.length" ng-click="exportToCSV()">Экспортировать матрицу в файл .csv</button>
+
+            <div class="alert alert-danger text-center" role="alert" style="margin-top:5px" ng-if="warning">"Пожалуйста выбирите файл"</div>
+
+            <div class="input-group" style="margin-top:10px">
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="bulkDirectFile">
+                    <label class="custom-file-label" for="bulkDirectFile">Выберите файл</label>
+                </div>
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" ng-click="submitForm()" type="button">Загрузить матрицу</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <hr />
+    <p class="text-center" ng-repeat="mat in matrix">
+        <span style="margin-left: 20px"
+              class="badge badge-info"
+              ng-repeat="m in mat track by $index">
+            {{m + " "}}
+        </span>
+    </p>
+</div>
